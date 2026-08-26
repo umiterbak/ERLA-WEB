@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -161,17 +162,27 @@ section{
 
 .btn{
 
-    display:inline-block;
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:48px;
 
     padding:12px 24px;
 
-    border-radius:5px;
+    border-radius:6px;
 
     text-decoration:none;
 
     font-weight:700;
 
+    font-size:15px;
+
     transition:.3s;
+
+    cursor:pointer;
 }
 
 .btn-primary{
@@ -180,6 +191,8 @@ section{
 
     color:#fff;
 
+    box-shadow:0 5px 15px rgba(23,105,170,.25);
+
 }
 
 .btn-primary:hover{
@@ -187,6 +200,8 @@ section{
     background:#0d578e;
 
     transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(23,105,170,.35);
 }
 
 .btn-light{
@@ -194,6 +209,9 @@ section{
     background:#fff;
 
     color:#151515;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
 }
 
 .btn-light:hover{
@@ -201,6 +219,7 @@ section{
     background:#ededed;
 
     transform:translateY(-2px);
+
 }
 
 
@@ -659,6 +678,8 @@ section{
     border-radius:10px;
 
     border:1px solid #e1e5e8;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.04);
 }
 
 .contact-box h3{
@@ -684,6 +705,32 @@ section{
     font-weight:700;
 }
 
+.contact-box a:hover{
+
+    text-decoration:underline;
+}
+
+.contact-info{
+
+    margin-top:20px;
+
+    padding-top:18px;
+
+    border-top:1px solid #e5e5e5;
+}
+
+.contact-info p{
+
+    margin-bottom:12px;
+}
+
+.address{
+
+    line-height:1.6;
+
+    margin-top:5px;
+}
+
 .contact-buttons{
 
     display:flex;
@@ -692,7 +739,7 @@ section{
 
     gap:10px;
 
-    margin-top:20px;
+    margin-top:22px;
 }
 
 .contact-buttons .btn{
@@ -702,11 +749,30 @@ section{
     background:#1769aa;
 
     border:none;
+
+    box-shadow:0 4px 12px rgba(23,105,170,.18);
 }
 
 .contact-buttons .btn:hover{
 
     background:#0d578e;
+
+    transform:translateY(-2px);
+}
+
+.contact-buttons .btn-whatsapp{
+
+    background:#1769aa;
+}
+
+.contact-buttons .btn-email{
+
+    background:#333;
+}
+
+.contact-buttons .btn-phone{
+
+    background:#111;
 }
 
 
@@ -730,6 +796,13 @@ footer{
 footer strong{
 
     color:#fff;
+}
+
+.footer-address{
+
+    margin-top:6px;
+
+    color:#777;
 }
 
 
@@ -839,6 +912,16 @@ footer strong{
         grid-template-columns:1fr;
     }
 
+    .contact-buttons{
+
+        flex-direction:column;
+    }
+
+    .contact-buttons .btn{
+
+        width:100%;
+    }
+
 }
 
 </style>
@@ -933,9 +1016,9 @@ ortaya çıkarıyoruz.
 
 <a
 class="btn btn-light"
-href="https://wa.me/9050636499497?text=Merhaba%20ERLA%20M%C3%BChendislik%2C%20projem%20hakk%C4%B1nda%20bilgi%20ve%20teklif%20almak%20istiyorum.">
+href="https://wa.me/905063649947?text=Merhaba%20ERLA%20M%C3%BChendislik%2C%20projem%20hakk%C4%B1nda%20bilgi%20ve%20teklif%20almak%20istiyorum.">
 
-Projenizi Anlatın
+Teklif Alın
 
 </a>
 
@@ -1649,22 +1732,53 @@ ERLA Mühendislik
 
 </p>
 
+<div class="contact-info">
+
 <p>
 
-<strong>Telefon:</strong>
+<strong>Telefon:</strong><br>
+
+<a href="tel:+905063649947">
 0506 364 99 47
+</a>
 
 </p>
 
 <p>
 
-<strong>E-posta:</strong>
+<strong>WhatsApp:</strong><br>
+
+<a
+href="https://wa.me/905063649947?text=Merhaba%20ERLA%20M%C3%BChendislik%2C%20projem%20hakk%C4%B1nda%20bilgi%20ve%20teklif%20almak%20istiyorum.">
+
+0506 364 99 47
+</a>
+
+</p>
+
+<p>
+
+<strong>E-posta:</strong><br>
 
 <a href="mailto:erlamuhendislik@gmail.com">
 erlamuhendislik@gmail.com
 </a>
 
 </p>
+
+<p class="address">
+
+<strong>Adres:</strong><br>
+
+Suluca Mah. 6386 Sk. FG 12<br>
+
+No: 6/B - 11<br>
+
+Sarıçam / ADANA
+
+</p>
+
+</div>
 
 </div>
 
@@ -1703,28 +1817,28 @@ Telefon, WhatsApp veya e-posta üzerinden bize ulaşabilirsiniz.
 
 
 <a
-class="btn"
-href="https://wa.me/9050636499497?text=Merhaba%20ERLA%20M%C3%BChendislik%2C%20projem%20hakk%C4%B1nda%20bilgi%20ve%20teklif%20almak%20istiyorum.">
+class="btn btn-whatsapp"
+href="https://wa.me/905063649947?text=Merhaba%20ERLA%20M%C3%BChendislik%2C%20projem%20hakk%C4%B1nda%20bilgi%20ve%20teklif%20almak%20istiyorum.">
 
-WhatsApp
+WhatsApp'tan Yazın
 
 </a>
 
 
 <a
-class="btn"
+class="btn btn-email"
 href="mailto:erlamuhendislik@gmail.com?subject=ERLA%20M%C3%BChendislik%20Teklif%20Talebi">
 
-E-posta
+E-posta Gönderin
 
 </a>
 
 
 <a
-class="btn"
-href="tel:+9050636499497">
+class="btn btn-phone"
+href="tel:+905063649947">
 
-Ara: 0506 364 99 47
+Hemen Arayın
 
 </a>
 
@@ -1756,8 +1870,15 @@ Tüm hakları saklıdır.
 
 </p>
 
+<p class="footer-address">
+
+Suluca Mah. 6386 Sk. FG 12, No: 6/B - 11, Sarıçam / ADANA
+
+</p>
+
 </footer>
 
 
 </body>
 </html>
+```
