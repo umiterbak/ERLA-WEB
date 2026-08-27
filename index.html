@@ -3,7 +3,6 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>ERLA Mühendislik | Doğru Çözüm, Doğru Bakış Açısı</title>
@@ -84,20 +83,18 @@ section{
 
 .hero{
     min-height:calc(100vh - 120px);
+
     display:flex;
     align-items:center;
 
     background:
     linear-gradient(
         90deg,
-        rgba(0,0,0,.78),
-        rgba(0,0,0,.48),
-        rgba(0,0,0,.25)
+        rgba(0,0,0,.72),
+        rgba(0,0,0,.30)
     ),
-
-    url("https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=2000&q=90")
-
-    center/cover no-repeat;
+    url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=2000&q=90")
+    center/cover;
 }
 
 .hero-content{
@@ -168,7 +165,6 @@ section{
 .btn-primary:hover{
     background:#0d578e;
     transform:translateY(-2px);
-    box-shadow:0 8px 20px rgba(23,105,170,.35);
 }
 
 .btn-light{
@@ -218,16 +214,10 @@ section{
     display:flex;
     flex-direction:column;
     box-shadow:0 4px 15px rgba(0,0,0,.04);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 12px 30px rgba(0,0,0,.09);
 }
 
 .card-image{
-    height:230px;
+    height:205px;
     background-size:cover;
     background-position:center;
 }
@@ -259,88 +249,6 @@ section{
 
 .card li{
     margin-bottom:5px;
-}
-
-
-/* =========================
-   HAVALANDIRMA DETAY
-========================= */
-
-.service-detail{
-    background:#fff;
-}
-
-.detail-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:55px;
-    align-items:center;
-}
-
-.detail-image{
-    min-height:430px;
-    border-radius:12px;
-    background-size:cover;
-    background-position:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.10);
-}
-
-.detail-text h2{
-    font-size:38px;
-    line-height:1.2;
-    margin-bottom:18px;
-}
-
-.detail-text .label{
-    display:block;
-    color:#1769aa;
-    font-size:13px;
-    font-weight:700;
-    letter-spacing:2px;
-    margin-bottom:10px;
-}
-
-.detail-text p{
-    color:#555;
-    font-size:16px;
-    margin-bottom:15px;
-}
-
-.detail-list{
-    list-style:none;
-    margin-top:20px;
-}
-
-.detail-list li{
-    padding:8px 0 8px 25px;
-    position:relative;
-    color:#444;
-}
-
-.detail-list li:before{
-    content:"✓";
-    position:absolute;
-    left:0;
-    color:#1769aa;
-    font-weight:700;
-}
-
-
-/* =========================
-   ÇELİK DETAY
-========================= */
-
-.steel-detail{
-    background:#f5f7f8;
-}
-
-
-/* =========================
-   TANK DETAY
-========================= */
-
-.tank-detail{
-    background:#fff;
 }
 
 
@@ -416,220 +324,147 @@ section{
 
 .about-section{
     padding-top:55px;
-    padding-bottom:45px;
+    padding-bottom:55px;
+    background:#fff;
 }
 
-.about{
-    display:grid;
-    grid-template-columns:400px 1fr;
-    gap:45px;
-    align-items:center;
-}
-
-.about-image{
-    min-height:410px;
+.about-box{
+    position:relative;
+    overflow:hidden;
+    max-width:1100px;
+    margin:auto;
+    padding:50px 55px;
+    border:1px solid #e1e5e8;
     border-radius:12px;
+    background:#fff;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.about-box::before{
+    content:"";
+    position:absolute;
+    inset:0;
 
     background:
     linear-gradient(
-        rgba(0,0,0,.12),
-        rgba(0,0,0,.12)
+        90deg,
+        rgba(255,255,255,.97) 0%,
+        rgba(255,255,255,.91) 42%,
+        rgba(255,255,255,.70) 70%,
+        rgba(255,255,255,.45) 100%
     ),
-
-    url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=90")
-
+    url("https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1600&q=90")
     center/cover;
+
+    opacity:.95;
+    z-index:0;
 }
 
-.about-text p{
-    color:#555;
+.about-content{
+    position:relative;
+    z-index:1;
+    max-width:850px;
+}
+
+.about-content p{
+    color:#444;
     font-size:16px;
-    margin-bottom:13px;
+    line-height:1.75;
+    margin-bottom:15px;
 }
 
-.about-text p:last-child{
+.about-content p:last-child{
     margin-bottom:0;
 }
 
-.about-bottom{
-    max-width:1000px;
-    margin:20px auto 0;
-}
-
-.about-bottom p{
-    color:#555;
-    font-size:16px;
-    margin-bottom:13px;
-}
-
 
 /* =========================
-   FELSEFE
+   FELSEFE / VİZYON / MİSYON
 ========================= */
 
-.philosophy{
-
-    background:
-    linear-gradient(
-        rgba(245,247,248,.94),
-        rgba(245,247,248,.94)
-    ),
-
-    url("https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1800&q=80")
-
-    center/cover fixed;
-
+.philosophy-section{
+    background:#f5f7f8;
     border-top:1px solid #e4e8eb;
     border-bottom:1px solid #e4e8eb;
-}
-
-.philosophy-inner{
-    max-width:1000px;
-    margin:auto;
-}
-
-.philosophy-title{
-    margin-bottom:25px;
-}
-
-.philosophy-title h2{
-    font-size:40px;
-    line-height:1.15;
-    margin-bottom:8px;
-}
-
-.philosophy-title .blue{
-    color:#1769aa;
-}
-
-.philosophy-title .dark{
-    color:#222;
-}
-
-.philosophy-title p{
-    color:#555;
-    font-size:19px;
-    font-weight:600;
-}
-
-.philosophy-text p{
-    color:#555;
-    font-size:17px;
-    line-height:1.7;
-    margin-bottom:13px;
-}
-
-.philosophy-text strong{
-    color:#222;
-    font-weight:700;
+    padding-top:55px;
+    padding-bottom:55px;
 }
 
 
-/* =========================
-   VİZYON
-========================= */
+/* VİZYON VE MİSYON */
 
-.vision-section{
+.vision-mission{
+    max-width:1100px;
+    margin:0 auto 30px;
 
-    background:
-    linear-gradient(
-        rgba(255,255,255,.94),
-        rgba(255,255,255,.94)
-    ),
-
-    url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=80")
-
-    center/cover fixed;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
 }
 
-
-/* =========================
-   MİSYON
-========================= */
-
-.mission-section{
-
-    background:
-    linear-gradient(
-        rgba(245,247,248,.94),
-        rgba(245,247,248,.94)
-    ),
-
-    url("https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1800&q=80")
-
-    center/cover fixed;
+.vm-box{
+    background:#fff;
+    border:1px solid #e1e5e8;
+    border-radius:12px;
+    padding:35px;
+    box-shadow:0 5px 18px rgba(0,0,0,.04);
 }
 
-
-/* =========================
-   VİZYON / MİSYON
-========================= */
-
-.text-section{
-    padding-top:50px;
-    padding-bottom:45px;
-}
-
-.text-inner{
-    max-width:1000px;
-    margin:auto;
-}
-
-.text-inner h2{
-    font-size:36px;
-    margin-bottom:18px;
+.vm-box h2{
+    font-size:32px;
     line-height:1.2;
+    margin-bottom:18px;
+    color:#222;
 }
 
-.text-inner h2 span{
+.vm-box h2 span{
     color:#1769aa;
 }
 
-.text-inner p{
+.vm-box p{
+    color:#555;
+    font-size:16px;
+    line-height:1.75;
+    margin-bottom:14px;
+}
+
+.vm-box p:last-child{
+    margin-bottom:0;
+}
+
+
+/* FELSEFE + ŞİRKET İLKESİ
+   TEK BÜYÜK KUTU */
+
+.philosophy-box{
+    max-width:1100px;
+    margin:0 auto;
+
+    padding:40px 45px;
+
+    background:#fff;
+
+    border:1px solid #e1e5e8;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.04);
+}
+
+.philosophy-box p{
     color:#555;
     font-size:17px;
     line-height:1.75;
     margin-bottom:14px;
 }
 
-
-/* =========================
-   İLKE
-========================= */
-
-.final-section{
-    padding-top:45px;
-    padding-bottom:45px;
-}
-
-.final-box{
-    max-width:1000px;
-    margin:auto;
-    padding:30px;
-    border:1px solid #e1e5e8;
-    border-radius:10px;
-    background:#fff;
-    box-shadow:0 5px 20px rgba(0,0,0,.04);
-}
-
-.final-box h2{
-    font-size:30px;
-    margin-bottom:15px;
-}
-
-.final-box p{
-    color:#555;
-    font-size:16px;
-    line-height:1.7;
-}
-
-.final-box strong{
-    color:#222;
+.philosophy-box p:last-child{
+    margin-bottom:0;
 }
 
 
 /* =========================
-   İLETİŞİM / TEKLİF
+   TEKLİF VE İLETİŞİM
 ========================= */
 
 .contact-section{
@@ -753,21 +588,10 @@ footer strong{
         grid-template-columns:1fr;
     }
 
-    .about{
+    .vision-mission{
         grid-template-columns:1fr;
     }
 
-    .about-image{
-        min-height:320px;
-    }
-
-    .detail-grid{
-        grid-template-columns:1fr;
-    }
-
-    .detail-image{
-        min-height:350px;
-    }
 }
 
 
@@ -816,16 +640,20 @@ footer strong{
         font-size:16px;
     }
 
-    .philosophy-title h2{
-        font-size:34px;
+    .about-box{
+        padding:35px 25px;
     }
 
-    .text-inner h2{
-        font-size:32px;
+    .vm-box{
+        padding:30px 25px;
     }
 
-    .detail-text h2{
-        font-size:32px;
+    .philosophy-box{
+        padding:30px 25px;
+    }
+
+    .vm-box h2{
+        font-size:30px;
     }
 
     .contact-grid{
@@ -864,7 +692,6 @@ footer strong{
 
 </div>
 
-
 <nav>
 
 <a href="#anasayfa">Ana Sayfa</a>
@@ -875,9 +702,9 @@ footer strong{
 
 <a href="#hakkimizda">Hakkımızda</a>
 
-<a href="#felsefe">Felsefemiz</a>
+<a href="#vizyonmisyon">Vizyon & Misyon</a>
 
-<a href="#iletisim">İletişim</a>
+<a href="#iletisim">Teklif Alın</a>
 
 </nav>
 
@@ -903,13 +730,11 @@ Her Doğru Çözüm,<br>
 
 </h1>
 
-
 <div class="hero-subtitle">
 
 Her Proje Yeniden Keşfedilmeyi Hak Eder.
 
 </div>
-
 
 <div class="hero-description">
 
@@ -920,30 +745,22 @@ ERLA Mühendislik olarak yalnızca imalat yapmıyoruz.
 <strong>
 
 İhtiyacı analiz ediyor, doğru çözümü araştırıyor,
-
 tüm olasılıkları değerlendiriyor ve en doğru çözümü
-
 ortaya çıkarıyoruz.
 
 </strong>
 
 </div>
 
-
 <div class="buttons">
 
 <a class="btn btn-primary" href="#hizmetler">
 
-Hizmetlerimizi İncele
+Hizmetlerimizi Keşfedin
 
 </a>
 
-
-<a
-
-class="btn btn-light"
-
-href="https://wa.me/905063649947?text=Merhaba%20ERLA%20M%C3%BChendislik%2C%20projem%20hakk%C4%B1nda%20bilgi%20ve%20teklif%20almak%20istiyorum">
+<a class="btn btn-light" href="#iletisim">
 
 Teklif Alın
 
@@ -968,17 +785,13 @@ Teklif Alın
 <div class="services-intro">
 
 <strong>
-
 İhtiyaca özel imalat, montaj ve uygulama çözümleri.
-
 </strong>
 
 <br>
 
 Her projeyi kendi şartları içerisinde değerlendiriyor;
-
 doğru malzeme, doğru ekipman ve doğru uygulama ile
-
 sonuca ulaşıyoruz.
 
 </div>
@@ -987,55 +800,38 @@ sonuca ulaşıyoruz.
 <div class="cards">
 
 
-<!-- HAVALANDIRMA -->
-
 <div class="card">
 
 <div
-
 class="card-image"
-
-style="background-image:url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1200&q=90');">
-
+style="
+background-image:url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=90');
+">
 </div>
-
 
 <div class="card-content">
 
 <h3>
-
 Havalandırma & İklimlendirme
-
 </h3>
-
 
 <p>
 
 Endüstriyel ve ticari alanların ihtiyacına uygun
-
 hava emişi, taze hava, egzoz ve iklimlendirme
-
 sistemleri.
 
 </p>
 
-
 <ul>
 
 <li>Havalandırma kanalı imalatı</li>
-
 <li>Kare ve dikdörtgen kanal sistemleri</li>
-
 <li>Fan tedariki ve fan sistemleri</li>
-
 <li>Davlumbaz ve emiş sistemleri</li>
-
 <li>Egzoz ve taze hava sistemleri</li>
-
 <li>İklimlendirme sistemleri</li>
-
 <li>Malzeme ve ekipman temini</li>
-
 <li>Montaj ve saha uygulamaları</li>
 
 </ul>
@@ -1046,53 +842,37 @@ sistemleri.
 
 
 
-<!-- ÇELİK -->
-
 <div class="card">
 
 <div
-
 class="card-image"
-
-style="background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=90');">
-
+style="
+background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=90');
+">
 </div>
-
 
 <div class="card-content">
 
 <h3>
-
-Ağır Çelik Konstrüksiyon
-
+Çelik Konstrüksiyon
 </h3>
-
 
 <p>
 
-Endüstriyel tesislere yönelik ağır çelik profillerle
-
-sağlam, güvenilir ve uzun ömürlü taşıyıcı sistemler.
+Endüstriyel ihtiyaçlara uygun sağlam,
+güvenilir ve uzun ömürlü çelik imalat çözümleri.
 
 </p>
 
-
 <ul>
 
-<li>HEA / HEB profiller</li>
-
-<li>NPI / NPU profiller</li>
-
 <li>Çelik konstrüksiyon imalatı</li>
-
-<li>Boru hattı taşıyıcıları</li>
-
-<li>Makine ve ekipman şaseleri</li>
-
 <li>Platform ve çalışma alanları</li>
-
-<li>Kaynaklı ağır çelik imalat</li>
-
+<li>Çelik merdivenler</li>
+<li>Makine ve ekipman şaseleri</li>
+<li>Taşıyıcı çelik sistemler</li>
+<li>Özel çelik imalatlar</li>
+<li>Kaynaklı imalat</li>
 <li>Saha montajı</li>
 
 </ul>
@@ -1103,322 +883,42 @@ sağlam, güvenilir ve uzun ömürlü taşıyıcı sistemler.
 
 
 
-<!-- TANK -->
-
 <div class="card">
 
 <div
-
 class="card-image"
-
-style="background-image:url('https://images.unsplash.com/photo-1565610222536-ef125c59da2e?auto=format&fit=crop&w=1200&q=90');">
-
+style="
+background-image:url('https://images.unsplash.com/photo-1565439373328-5b5c5f7c1c4c?auto=format&fit=crop&w=1200&q=90');
+">
 </div>
-
 
 <div class="card-content">
 
 <h3>
-
 Tank İmalatı
-
 </h3>
-
 
 <p>
 
 Kapasite, kullanım amacı ve çalışma şartlarına göre
-
 değerlendirilen endüstriyel tank çözümleri.
 
 </p>
 
-
 <ul>
 
 <li>Endüstriyel tank imalatı</li>
-
 <li>Su ve proses tankları</li>
-
 <li>Yakıt ve depolama tankları</li>
-
-<li>Yatay ve dikey silindirik tanklar</li>
-
-<li>Bombeli başlıklar</li>
-
-<li>Bağlantı nozulları</li>
-
+<li>Silindirik tanklar</li>
+<li>Özel ölçü ve tasarımlar</li>
+<li>Kaynaklı imalat</li>
 <li>Hidrostatik test uygulamaları</li>
-
 <li>Saha montajı</li>
 
 </ul>
 
 </div>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-     HAVALANDIRMA DETAY
-========================= -->
-
-<section class="service-detail" id="havalandirma">
-
-<div class="container">
-
-<div class="detail-grid">
-
-
-<div
-
-class="detail-image"
-
-style="background-image:url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=90');">
-
-</div>
-
-
-<div class="detail-text">
-
-<span class="label">
-
-HAVALANDIRMA & İKLİMLENDİRME
-
-</span>
-
-
-<h2>
-
-Doğru hava akışı,
-
-doğru mühendislik.
-
-</h2>
-
-
-<p>
-
-Endüstriyel tesis, fabrika, atölye ve ticari alanların
-
-ihtiyaçlarına göre taze hava, emiş, egzoz ve üfleme
-
-sistemleri oluşturuyoruz.
-
-</p>
-
-
-<p>
-
-Hava kanallarından fanlara, davlumbazlardan taze hava
-
-sistemlerine kadar uygulamanın tamamını bir bütün olarak
-
-değerlendiriyoruz.
-
-</p>
-
-
-<ul class="detail-list">
-
-<li>Taze hava sistemleri</li>
-
-<li>Emiş ve üfleme sistemleri</li>
-
-<li>Endüstriyel havalandırma kanalları</li>
-
-<li>Fan ve aspirasyon sistemleri</li>
-
-<li>Toz ve duman tahliye sistemleri</li>
-
-<li>Isıtma ve soğutma hava sistemleri</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-     ÇELİK DETAY
-========================= -->
-
-<section class="service-detail steel-detail" id="celik">
-
-<div class="container">
-
-<div class="detail-grid">
-
-
-<div class="detail-text">
-
-<span class="label">
-
-AĞIR ÇELİK KONSTRÜKSİYON
-
-</span>
-
-
-<h2>
-
-Endüstriyel yükleri
-
-taşıyan sağlam yapılar.
-
-</h2>
-
-
-<p>
-
-ERLA Mühendislik'te çelik konstrüksiyon;
-
-hafif dekoratif uygulamalardan ziyade endüstriyel
-
-tesislerde kullanılan taşıyıcı sistemleri ifade eder.
-
-</p>
-
-
-<p>
-
-HEA, HEB, NPI, NPU gibi ağır çelik profiller kullanılarak
-
-makine, ekipman, boru hattı ve platformların taşıyıcı
-
-sistemleri imal edilir.
-
-</p>
-
-
-<ul class="detail-list">
-
-<li>HEA / HEB ağır çelik profiller</li>
-
-<li>NPI / NPU profiller</li>
-
-<li>Boru hattı taşıyıcı konstrüksiyonları</li>
-
-<li>Makine ve ekipman taşıyıcıları</li>
-
-<li>Platform ve bakım platformları</li>
-
-<li>Endüstriyel çelik yapılar</li>
-
-</ul>
-
-</div>
-
-
-<div
-
-class="detail-image"
-
-style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=90');">
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-     TANK DETAY
-========================= -->
-
-<section class="service-detail tank-detail" id="tank">
-
-<div class="container">
-
-<div class="detail-grid">
-
-
-<div
-
-class="detail-image"
-
-style="background-image:url('https://images.unsplash.com/photo-1565439373328-5b5c5f7c1c4c?auto=format&fit=crop&w=1400&q=90');">
-
-</div>
-
-
-<div class="detail-text">
-
-<span class="label">
-
-TANK İMALATI
-
-</span>
-
-
-<h2>
-
-İhtiyaca göre üretilen
-
-endüstriyel tanklar.
-
-</h2>
-
-
-<p>
-
-Endüstriyel proseslerde kullanılan tankları;
-
-kapasite, kullanım amacı, malzeme ve çalışma şartlarını
-
-dikkate alarak imal ediyoruz.
-
-</p>
-
-
-<p>
-
-Yatay veya dikey silindirik gövdeler, bombeli başlıklar,
-
-bağlantı nozulları, pompa emiş ve çıkışları, seviye
-
-göstergeleri ve taşıyıcı konstrüksiyonlar uygulamaya
-
-dahil edilebilir.
-
-</p>
-
-
-<ul class="detail-list">
-
-<li>Yatay silindirik tanklar</li>
-
-<li>Dikey tanklar</li>
-
-<li>Bombeli / tori-sferik başlıklar</li>
-
-<li>Dolum ve boşaltma nozulları</li>
-
-<li>Pompa emiş ve çıkış bağlantıları</li>
-
-<li>Seviye göstergesi bağlantıları</li>
-
-<li>Tank taşıyıcı çelik konstrüksiyonları</li>
-
-</ul>
 
 </div>
 
@@ -1442,18 +942,12 @@ dahil edilebilir.
 <div class="references-head">
 
 <h2>
-
 Referanslarımız
-
 </h2>
 
-
 <p>
-
 Gerçekleştirdiğimiz bazı imalat,
-
 montaj ve saha uygulamalarımız.
-
 </p>
 
 </div>
@@ -1462,212 +956,126 @@ montaj ve saha uygulamalarımız.
 <div class="reference-grid">
 
 
-<!-- OSMANİYE -->
-
 <div class="reference-card">
 
 <h3>
-
 7 Ocak Stadyumu
-
 </h3>
 
-
 <p>
-
 <strong>Lokasyon:</strong>
-
 Osmaniye
-
 </p>
 
-
 <p>
-
 <strong>Proje Adı:</strong>
-
 7 Ocak Stadyumu
-
 </p>
 
-
 <p>
-
 <strong>Uygulama:</strong>
-
 Havalandırma ve İklimlendirme Sistemi
-
 </p>
 
-
 <p>
-
 <strong>Yapılan İş:</strong>
-
 Doğu ve batı tribünleri işi, geri kazanım cihazı
-
 ve havalandırma iklimlendirme sistemlerinin
-
 imalat ve montaj uygulaması.
-
 </p>
 
 </div>
 
 
 
-<!-- KOZAN -->
-
 <div class="reference-card">
 
 <h3>
-
 Kozan Devlet Hastanesi
-
 </h3>
 
-
 <p>
-
 <strong>Lokasyon:</strong>
-
 Adana
-
 </p>
 
-
 <p>
-
 <strong>Proje Adı:</strong>
-
 Kozan Devlet Hastanesi
-
 </p>
 
-
 <p>
-
 <strong>Uygulama:</strong>
-
 Mazot Tankı
-
 </p>
 
-
 <p>
-
 <strong>Yapılan İş:</strong>
-
 Jeneratör yakıt sistemleri için 7 ton kapasiteli
-
 iki adet mazot tankı imalat ve montaj uygulaması.
-
 </p>
 
 </div>
 
 
 
-<!-- GÜNEŞ CNC -->
-
 <div class="reference-card">
 
 <h3>
-
 Güneş CNC Mobilya
-
 </h3>
 
-
 <p>
-
 <strong>Lokasyon:</strong>
-
 Adana
-
 </p>
 
-
 <p>
-
 <strong>Proje Adı:</strong>
-
 Güneş CNC Mobilya
-
 </p>
 
-
 <p>
-
 <strong>Uygulama:</strong>
-
 Siklon ve Toz Toplama Sistemi
-
 </p>
 
-
 <p>
-
 <strong>Yapılan İş:</strong>
-
 CNC makineleri talaş toplama ünitesi,
-
 siklon ve toz toplama deposu imalat ve
-
 montaj uygulaması.
-
 </p>
 
 </div>
 
 
 
-<!-- DİŞ KLİNİĞİ -->
-
 <div class="reference-card">
 
 <h3>
-
 Orhan Özkan Diş Kliniği
-
 </h3>
 
-
 <p>
-
 <strong>Lokasyon:</strong>
-
 Adana
-
 </p>
 
-
 <p>
-
 <strong>Proje Adı:</strong>
-
 Orhan Özkan Diş Kliniği
-
 </p>
 
-
 <p>
-
 <strong>Uygulama:</strong>
-
 Havalandırma Sistemleri
-
 </p>
 
-
 <p>
-
 <strong>Yapılan İş:</strong>
-
 Taze hava ve egzoz emişi havalandırma
-
 sistemlerinin imalat ve montaj uygulaması.
-
 </p>
 
 </div>
@@ -1689,236 +1097,78 @@ sistemlerinin imalat ve montaj uygulaması.
 
 <div class="container">
 
-<div class="about">
+<div class="about-box">
 
-
-<div class="about-image"></div>
-
-
-<div class="about-text">
+<div class="about-content">
 
 <p>
 
-ERLA Mühendislik, mühendisliği yalnızca teknik bir hizmet
-
-olarak değil;
-
-her projeyi yeniden keşfedilmeyi hak eden özgün bir
-
-mühendislik problemi olarak ele alan bir düşünce disiplini
-
-olarak görür.
+ERLA Mühendislik, mühendisliği yalnızca teknik bir hizmet olarak değil;
+her projeyi yeniden keşfedilmeyi hak eden özgün bir mühendislik problemi
+olarak ele alan bir düşünce disiplini olarak görür.
 
 </p>
 
-
 <p>
 
-Bu anlayışla ihtiyaçları analiz eder, en doğru çözümü
-
-araştırır, üretir, uygular ve yaptığı her işle kalıcı
-
-güven inşa eder.
+Bu anlayışla ihtiyaçları analiz eder, en doğru çözümü tasarlar,
+üretir, uygular ve yaptığı her işle kalıcı güven inşa eder.
 
 </p>
 
-
 <p>
 
-Şirketimizin ismini taşıyan ERLA, İskandinav kültüründe
-
-kartalı simgeler.
-
-Kartal; büyük resmi görebilen, en küçük ayrıntıyı dahi
-
-fark edebilen, doğru zamanı sabırla bekleyen ve
-
-hedefinden sapmayan bir karakteri temsil eder.
+Şirketimizin ismini taşıyan ERLA, İskandinav kültüründe kartalı simgeler.
+Kartal; büyük resmi görebilen, en küçük ayrıntıyı dahi fark edebilen,
+doğru zamanı sabırla bekleyen ve hedefinden asla sapmayan bir karakteri
+temsil eder.
 
 </p>
 
-
 <p>
 
-Gücünü yalnızca kanatlarından değil, doğru bakış açısından
-
-alır.
-
-İşte ERLA Mühendislik'in çalışma anlayışı da bu felsefe
-
-üzerine kuruludur.
+Gücünü yalnızca kanatlarından değil, doğru bakış açısından alır.
+İşte ERLA Mühendislik'in çalışma anlayışı da bu felsefe üzerine kuruludur.
 
 </p>
 
-</div>
-
-</div>
-
-
-<div class="about-bottom">
-
 <p>
 
-Her projeye büyük resmi görerek yaklaşır, en küçük ayrıntıyı
-
-dahi titizlikle değerlendiririz. Doğru planlama, teknik
-
-yeterlilik ve disiplinli uygulama sayesinde müşterilerimize
-
-sadece bir hizmet değil; güvenilir, sürdürülebilir ve uzun
-
-ömürlü çözümler sunarız.
+Her projeye büyük resmi görerek yaklaşır, en küçük ayrıntıyı dahi
+titizlikle değerlendiririz. Doğru planlama, teknik yeterlilik ve
+disiplinli uygulama sayesinde müşterilerimize sadece bir hizmet değil;
+güvenilir, sürdürülebilir ve uzun ömürlü çözümler sunarız.
 
 </p>
 
-
 <p>
 
-Kaliteden taviz vermeyen yapımız, sürekli gelişime olan
-
-inancımız ve mühendislik etiğine bağlılığımız; bizi her
-
-projede daha iyisini üretmeye yönlendirir.
+Kaliteden taviz vermeyen yapımız, sürekli gelişime olan inancımız
+ve mühendislik etiğine bağlılığımız; bizi her projede daha iyisini
+üretmeye yönlendirir.
 
 </p>
 
-
 <p>
 
-Karşılaştığımız zorlukları engel değil, çözülmesi gereken
-
-mühendislik problemleri olarak görür; bilgi, tecrübe ve
-
-doğru ekip çalışmasıyla sonuca ulaşırız.
+Karşılaştığımız zorlukları engel değil, çözülmesi gereken mühendislik
+problemleri olarak görür; bilgi, tecrübe ve doğru ekip çalışmasıyla
+sonuca ulaşırız.
 
 </p>
 
-
 <p>
 
-ERLA Mühendislik için başarı; yalnızca tamamlanan projelerle
-
-değil, geride bırakılan güven, kalite ve memnuniyetle ölçülür.
+ERLA Mühendislik için başarı; yalnızca tamamlanan projelerle değil,
+geride bırakılan güven, kalite ve memnuniyetle ölçülür.
 
 </p>
 
-
 <p>
 
-Bugün olduğu gibi gelecekte de hedefimiz; sektöründe örnek
-
-gösterilen, güvenilirliğiyle tercih edilen ve ürettiği her
-
-projede imzasını kaliteyle atan bir mühendislik markası
-
-olmaktır.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-     FELSEFE
-========================= -->
-
-<section class="philosophy" id="felsefe">
-
-<div class="container">
-
-<div class="philosophy-inner">
-
-
-<div class="philosophy-title">
-
-<h2>
-
-<span class="blue">
-
-Doğru Bakış Açısı.
-
-</span>
-
-<span class="dark">
-
-Doğru Çözüm.
-
-</span>
-
-</h2>
-
-
-<p>
-
-Her Proje Yeniden Keşfedilmeyi Hak Eder.
-
-</p>
-
-</div>
-
-
-<div class="philosophy-text">
-
-<p>
-
-<strong>
-
-Her doğru çözüm, doğru bir bakış açısıyla başlar.
-
-</strong>
-
-</p>
-
-
-<p>
-
-Biz, hiçbir projeye birbirinin aynısı gözüyle bakmayız.
-
-Çünkü biliriz ki her yapı, her işletme ve her ihtiyaç
-
-kendine özgüdür.
-
-</p>
-
-
-<p>
-
-Bu yüzden hazır cevaplar sunmayız; doğru soruları sorar,
-
-ihtiyaçları anlar, tüm olasılıkları değerlendirir ve en
-
-doğru çözümü ortaya çıkarırız.
-
-</p>
-
-
-<p>
-
-Çünkü doğru çözüm tesadüfen bulunmaz.
-
-<strong>Doğru bakış açısıyla keşfedilir.</strong>
-
-<strong>Doğru analizle şekillenir.</strong>
-
-<strong>Kusursuz uygulamayla değer kazanır.</strong>
-
-<strong>Güvenle kalıcı olur.</strong>
-
-</p>
-
-
-<p>
-
-<strong>Doğruluk</strong> standardımızdır.
-
-<strong>Mükemmeliyet</strong> çalışma biçimimizdir.
-
-<strong>Güven</strong> ise attığımız her imzanın temelidir.
+Bugün olduğu gibi gelecekte de hedefimiz; sektöründe örnek gösterilen,
+güvenilirliğiyle tercih edilen ve ürettiği her projede imzasını
+kaliteyle atan bir mühendislik markası olmaktır.
 
 </p>
 
@@ -1933,177 +1183,160 @@ doğru çözümü ortaya çıkarırız.
 
 
 <!-- =========================
-     VİZYON
+     VİZYON / MİSYON / FELSEFE
 ========================= -->
 
-<section class="text-section vision-section">
+<section class="philosophy-section" id="vizyonmisyon">
 
 <div class="container">
 
-<div class="text-inner">
+
+<!-- VİZYON VE MİSYON ÜSTTE, YAN YANA -->
+
+<div class="vision-mission">
+
+
+<div class="vm-box">
 
 <h2>
-
 <span>Vizyonumuz</span>
-
 </h2>
-
 
 <p>
 
 Biz, mühendislikte ezber çözümlerin değil;
-
-doğru analizle bulunan doğru çözümlerin zamana meydan
-
-okuduğuna inanıyoruz.
+doğru analizle bulunan doğru çözümlerin zamana meydan okuduğuna inanıyoruz.
 
 </p>
 
-
 <p>
 
-Her yapının, her işletmenin ve her ihtiyacın kendine özgü
-
-olduğunun bilinciyle hiçbir projeye ezber kalıplarla
-
-yaklaşmayız.
+Her yapının, her işletmenin ve her ihtiyacın kendine özgü olduğunun
+bilinciyle hiçbir projeye ezber kalıplarla yaklaşmayız.
 
 </p>
 
-
 <p>
 
-Çünkü biliriz ki çoğu zaman bir sistemi sıradanlıktan
-
-mükemmelliğe taşıyan fark, gözden kaçan tek bir ayrıntıda
-
-saklıdır.
+Çünkü biliriz ki çoğu zaman bir sistemi sıradanlıktan mükemmelliğe
+taşıyan fark, gözden kaçan tek bir ayrıntıda saklıdır.
 
 </p>
 
-
 <p>
 
-Bu anlayışla vizyonumuz; her projeyi yeniden keşfedilmeyi
-
-hak eden özgün bir mühendislik problemi olarak ele alan,
-
-tüm olası çözüm senaryolarını teknik, ekonomik ve
-
-sürdürülebilirlik ilkeleri doğrultusunda titizlikle
-
-değerlendiren, en doğru çözümü tasarlayan ve en yüksek
-
-kaliteyle uygulayan bir marka olmaktır.
+Bu anlayışla vizyonumuz; her projeyi yeniden keşfedilmeyi hak eden
+özgün bir mühendislik problemi olarak ele alan, tüm olası çözüm
+senaryolarını teknik, ekonomik ve sürdürülebilirlik ilkeleri
+doğrultusunda titizlikle değerlendiren, en doğru çözümü tasarlayan,
+en yüksek kaliteyle uygulayan ve mühendislikte doğruluğun,
+uygulamada mükemmeliyetin, her şeyden önce ise güvenin simgesi
+olan bir marka olmaktır.
 
 </p>
 
 </div>
 
-</div>
-
-</section>
 
 
-
-<!-- =========================
-     MİSYON
-========================= -->
-
-<section class="text-section mission-section">
-
-<div class="container">
-
-<div class="text-inner">
+<div class="vm-box">
 
 <h2>
-
 <span>Misyonumuz</span>
-
 </h2>
-
 
 <p>
 
 Alışılmışı tekrar etmek için değil,
-
 mühendislikte doğru olanı ortaya koymak için varız.
 
 </p>
 
-
 <p>
 
-Her projeyi ezberlerden uzak bir bakış açısıyla yeniden
-
-değerlendirir; doğru analiz, doğru çözüm ve kusursuz
-
-uygulama anlayışıyla hareket ederiz.
+Her projeyi ezberlerden uzak bir bakış açısıyla yeniden değerlendirir;
+doğru analiz, doğru çözüm ve kusursuz uygulama anlayışıyla hareket ederiz.
 
 </p>
 
-
 <p>
 
-Teknik doğruluk, üstün işçilik ve sürdürülebilir kaliteyi
-
-bir araya getirerek yalnızca sistemler kurmayız;
-
-güven inşa eder, uzun yıllar değer üreten çözümler
-
-geliştiririz.
+Teknik doğruluk, üstün işçilik ve sürdürülebilir kaliteyi bir araya
+getirerek yalnızca sistemler kurmayız; güven inşa eder,
+uzun yıllar değer üreten çözümler geliştiririz.
 
 </p>
-
 
 <p>
 
 Çünkü bizim için başarı, işi teslim ettiğimiz gün değil;
-
 kurduğumuz sistem yıllar sonra da aynı güvenle çalışmaya
-
 devam ettiğinde başlar.
 
 </p>
 
 </div>
 
+
 </div>
 
-</section>
 
 
+<!-- FELSEFE + ŞİRKET İLKESİ
+     TEK BÜYÜK ALT KUTU -->
 
-<!-- =========================
-     ŞİRKET İLKESİ
-========================= -->
+<div class="philosophy-box">
 
-<section class="final-section">
+<p>
 
-<div class="container">
+<strong>Her doğru çözüm, doğru bir bakış açısıyla başlar.</strong>
 
-<div class="final-box">
+</p>
 
-<h2>
+<p>
 
-Şirket İlkemiz
+Biz, hiçbir projeye birbirinin aynısı gözüyle bakmayız.
+Çünkü biliriz ki her yapı, her işletme ve her ihtiyaç kendine özgüdür.
 
-</h2>
+</p>
 
+<p>
+
+Bu yüzden hazır cevaplar sunmayız; doğru soruları sorar,
+ihtiyaçları anlar, tüm olasılıkları değerlendirir ve en doğru
+çözümü ortaya çıkarırız.
+
+</p>
+
+<p>
+
+Çünkü doğru çözüm tesadüfen bulunmaz.
+Doğru bakış açısıyla keşfedilir.
+Doğru analizle şekillenir.
+Kusursuz uygulamayla değer kazanır.
+Güvenle kalıcı olur.
+
+</p>
+
+<p>
+
+<strong>Doğruluk</strong> standartımızdır.
+<strong>Mükemmeliyet</strong> çalışma biçimimizdir.
+<strong>Güven</strong> ise attığımız her imzanın temelidir.
+
+</p>
 
 <p>
 
 Bizim için başarı; yalnızca sistem kurmak değil,
-
 <strong>doğruluğu standart</strong>,
-
 <strong>mükemmeliyeti alışkanlık</strong> ve
-
 <strong>güveni en değerli imza</strong> haline getirmektir.
 
 </p>
 
 </div>
+
 
 </div>
 
@@ -2125,20 +1358,15 @@ Bizim için başarı; yalnızca sistem kurmak değil,
 <div class="contact-box">
 
 <h3>
-
 ERLA Mühendislik
-
 </h3>
-
 
 <p>
 
 <strong>Genel Müdür / Şirket Sahibi:</strong>
-
 Ümit Erbak
 
 </p>
-
 
 <div class="contact-info">
 
@@ -2147,41 +1375,20 @@ ERLA Mühendislik
 <strong>Telefon:</strong><br>
 
 <a href="tel:+905063649947">
-
 0506 364 99 47
-
 </a>
 
 </p>
-
-
-<p>
-
-<strong>WhatsApp:</strong><br>
-
-<a
-
-href="https://wa.me/905063649947?text=Merhaba%20ERLA%20M%C3%BChendislik%2C%20projem%20hakk%C4%B1nda%20bilgi%20ve%20teklif%20almak%20istiyorum">
-
-0506 364 99 47
-
-</a>
-
-</p>
-
 
 <p>
 
 <strong>E-posta:</strong><br>
 
 <a href="mailto:erlamuhendislik@gmail.com">
-
 erlamuhendislik@gmail.com
-
 </a>
 
 </p>
-
 
 <p class="address">
 
@@ -2204,11 +1411,8 @@ Sarıçam / ADANA
 <div class="contact-box">
 
 <h3>
-
 Teklif ve Bilgi
-
 </h3>
-
 
 <p>
 
@@ -2216,24 +1420,18 @@ Projenizi anlatın, ihtiyacınızı birlikte değerlendirelim.
 
 </p>
 
-
 <p>
 
 Havalandırma, iklimlendirme, çelik konstrüksiyon,
-
 tank imalatı veya özel bir imalat ihtiyacınız varsa;
-
 size uygun çözümü birlikte keşfedelim.
 
 </p>
 
-
 <p>
 
 <strong>
-
 Telefon, WhatsApp veya e-posta üzerinden bize ulaşabilirsiniz.
-
 </strong>
 
 </p>
@@ -2243,10 +1441,8 @@ Telefon, WhatsApp veya e-posta üzerinden bize ulaşabilirsiniz.
 
 
 <a
-
-class="btn"
-
-href="https://wa.me/905063649947?text=Merhaba%20ERLA%20M%C3%BChendislik%2C%20projem%20hakk%C4%B1nda%20bilgi%20ve%20teklif%20almak%20istiyorum">
+class="btn btn-whatsapp"
+href="https://wa.me/905063649947?text=Merhaba%20ERLA%20M%C3%BChendislik%2C%20projem%20hakk%C4%B1nda%20bilgi%20ve%20teklif%20almak%20istiyorum.">
 
 WhatsApp'tan Yazın
 
@@ -2254,9 +1450,7 @@ WhatsApp'tan Yazın
 
 
 <a
-
 class="btn btn-email"
-
 href="mailto:erlamuhendislik@gmail.com?subject=ERLA%20M%C3%BChendislik%20Teklif%20Talebi">
 
 E-posta Gönderin
@@ -2265,9 +1459,7 @@ E-posta Gönderin
 
 
 <a
-
 class="btn btn-phone"
-
 href="tel:+905063649947">
 
 Hemen Arayın
@@ -2278,6 +1470,7 @@ Hemen Arayın
 </div>
 
 </div>
+
 
 </div>
 
@@ -2296,13 +1489,10 @@ Hemen Arayın
 <p>
 
 © 2026
-
 <strong>ERLA Mühendislik</strong>.
-
 Tüm hakları saklıdır.
 
 </p>
-
 
 <p class="footer-address">
 
@@ -2314,5 +1504,4 @@ Suluca Mah. 6386 Sk. FG 12, No: 6/B - 11, Sarıçam / ADANA
 
 
 </body>
-
 </html>
